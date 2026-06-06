@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mobile UI Breakage · QASync Scenario 4</title>
+<link rel="stylesheet" href="../CSS/scenario_style.css" />
+<link rel="stylesheet" href="../CSS/style.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+</head>
+<body class="scenario-page">
+
+<!-- ===== NAVBAR (matches site) ===== -->
+<nav class="site-nav">
+    <a href="index.html" class="nav-logo">QA<span>Sync</span></a>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../practice.html">Practice</a></li>
+        <li><a href="../scenarios.html">Scenarios</a></li>
+        <li><a href="../cheat-sheet.html">Cheat Sheet</a></li>
+        <li><a href="../practice.html" class="btn-nav">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" data-bs-toggle="offcanvas" data-bs-target="#menu">☰</button>
+</nav>
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">QASync</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../practice.html">Practice Questions</a></li>
+            <li><a href="../scenarios.html">Scenarios</a></li>
+            <li><a href="../cheat-sheet.html">Cheat Sheet</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== SCENARIO LAYOUT ===== -->
+<main class="scn-wrap">
+
+  <!-- Top bar: back + counter -->
+  <div class="scn-topbar">
+    <a class="scn-back" href="../scenarios.html">← Back to Scenarios</a>
+    <span class="scn-counter">Scenario <b>4</b> of 15</span>
+  </div>
+
+  <div class="scn-grid">
+
+    <!-- LEFT: Scenario card -->
+    <section class="scn-main glass">
+      <span class="scn-tag cat-uiux"><span class="dot"></span>UI/UX Testing</span>
+      <h1 class="scn-title">Mobile UI Breakage</h1>
+      <p class="scn-sub">Buttons overlap, text vanishes, calendars escape.</p>
+
+      <div class="scn-block">
+        <div class="scn-block-head">
+          <span class="scn-block-icon">📄</span>
+          <h3>Scenario</h3>
+        </div>
+        <p class="scn-block-body">On a travel booking website: buttons <b>overlap</b> on smaller mobile screens, text becomes <b>unreadable</b> in dark mode, and the calendar popup goes <b>outside the screen</b>.</p>
+      </div>
+
+      <h3 class="scn-q">What type of issue is this MOST likely?</h3>
+
+      <form id="scn-form" class="scn-options">
+        <label class="scn-opt" data-key="A">
+          <input type="radio" name="answer" value="A" />
+          <span class="scn-key">A</span>
+          <span class="scn-text">API issue</span>
+          <span class="scn-radio"></span>
+        </label>
+        <label class="scn-opt" data-key="B">
+          <input type="radio" name="answer" value="B" />
+          <span class="scn-key">B</span>
+          <span class="scn-text">Functional issue</span>
+          <span class="scn-radio"></span>
+        </label>
+        <label class="scn-opt" data-key="C">
+          <input type="radio" name="answer" value="C" />
+          <span class="scn-key">C</span>
+          <span class="scn-text">UI responsiveness / usability issue</span>
+          <span class="scn-radio"></span>
+        </label>
+        <label class="scn-opt" data-key="D">
+          <input type="radio" name="answer" value="D" />
+          <span class="scn-key">D</span>
+          <span class="scn-text">Database issue</span>
+          <span class="scn-radio"></span>
+        </label>
+      </form>
+
+      <div class="scn-actions">
+        <button id="submitBtn" class="scn-submit" type="button">Submit Answer</button>
+        <button id="resetBtn" class="scn-reset" type="button" hidden>Try Again</button>
+      </div>
+
+      <!-- Explanation reveal -->
+      <div id="explainBox" class="scn-explain" hidden>
+        <div class="scn-explain-head">
+          <span id="explainEmoji">🎯</span>
+          <h3 id="explainTitle">Nice work!</h3>
+        </div>
+        <p id="explainBody"></p>
+        <div class="scn-nav">
+          <a class="scn-nav-btn" href="./3-auto-pay-bills-release.html">← Previous</a>
+          <a class="scn-nav-btn primary" href="./5-cart-delete-confusion.html">Next Scenario →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT: Hint / think-like-a-tester -->
+    <aside class="scn-side">
+      <div class="scn-hint glass">
+        <div class="scn-hint-bulb">💡</div>
+        <h4>Look at the symptoms.</h4>
+        <p>Layout, contrast, popup positioning — none of these touch the server. They all live in the same layer: <b>how the UI adapts to its environment</b>.</p>
+      </div>
+
+      <div class="scn-illus glass">
+        <div class="scn-illus-emoji">📱</div>
+        <p class="scn-illus-cap">UI/UX Testing</p>
+      </div>
+
+      <div class="scn-progress glass">
+        <p class="scn-progress-label">Progress</p>
+        <div class="scn-progress-bar"><span style="width:27%"></span></div>
+        <p class="scn-progress-num">4 / 15</p>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- Confetti container -->
+<div id="confetti" class="confetti-layer" aria-hidden="true"></div>
+
+<script>
+(function(){
+  const CORRECT = "C";
+  const EXPLAIN_GOOD = "Every symptom — overlap, contrast, off-screen popups — is about <b>how the UI behaves across devices and themes</b>. That’s textbook responsive + usability testing.";
+  const EXPLAIN_BAD  = "Nothing here points to broken APIs, missing data, or logic errors. The features <i>work</i> — they just don’t <i>fit</i>. That’s a UI/UX problem, not a backend one.";
+
+  const form = document.getElementById('scn-form');
+  const submit = document.getElementById('submitBtn');
+  const reset = document.getElementById('resetBtn');
+  const box = document.getElementById('explainBox');
+  const title = document.getElementById('explainTitle');
+  const body = document.getElementById('explainBody');
+  const emoji = document.getElementById('explainEmoji');
+  const opts = form.querySelectorAll('.scn-opt');
+
+  function clearMarks(){
+    opts.forEach(o => o.classList.remove('is-correct','is-wrong','is-locked'));
+  }
+
+  function lock(){
+    form.querySelectorAll('input').forEach(i => i.disabled = true);
+    opts.forEach(o => o.classList.add('is-locked'));
+  }
+
+  function confetti(){
+    const layer = document.getElementById('confetti');
+    layer.innerHTML = '';
+    const colors = ['#7c5cff','#ff7ab6','#ffd166','#5cc8a8','#ff8a65'];
+    for (let i=0;i<60;i++){
+      const p = document.createElement('span');
+      p.className = 'confetti-piece';
+      p.style.left = Math.random()*100 + 'vw';
+      p.style.background = colors[i%colors.length];
+      p.style.animationDelay = (Math.random()*0.4) + 's';
+      p.style.transform = 'rotate(' + (Math.random()*360) + 'deg)';
+      layer.appendChild(p);
+    }
+    setTimeout(() => layer.innerHTML = '', 2200);
+  }
+
+  submit.addEventListener('click', function(){
+    const picked = form.querySelector('input[name="answer"]:checked');
+    if (!picked){
+      submit.classList.add('shake');
+      setTimeout(()=>submit.classList.remove('shake'),500);
+      return;
+    }
+    clearMarks();
+    const val = picked.value;
+    opts.forEach(o => {
+      if (o.dataset.key === CORRECT) o.classList.add('is-correct');
+      else if (o.dataset.key === val) o.classList.add('is-wrong');
+    });
+    lock();
+
+    const ok = val === CORRECT;
+    box.hidden = false;
+    box.classList.remove('good','bad');
+    box.classList.add(ok ? 'good' : 'bad');
+    emoji.textContent = ok ? '🎉' : '🤔';
+    title.textContent = ok ? 'Spot on — that’s the right call.' : 'Not quite — but here’s the thinking.';
+    body.innerHTML = ok ? EXPLAIN_GOOD : EXPLAIN_BAD;
+
+    if (ok) confetti();
+
+    submit.hidden = true;
+    reset.hidden = false;
+    box.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+
+  reset.addEventListener('click', function(){
+    form.reset();
+    form.querySelectorAll('input').forEach(i => i.disabled = false);
+    clearMarks();
+    box.hidden = true;
+    submit.hidden = false;
+    reset.hidden = true;
+  });
+})();
+</script>
+</body>
+</html>

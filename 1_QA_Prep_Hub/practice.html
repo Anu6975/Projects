@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Questions — QASync</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="site-nav">
+    <a href="index.html" class="nav-logo">QA<span>Sync</span></a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="scenarios.html">Scenarios</a></li>
+        <li><a href="cheat-sheet.html">Cheat Sheet</a></li>
+        <li><a href="practice.html" class="btn-nav">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" data-bs-toggle="offcanvas" data-bs-target="#menu">☰</button>
+</nav>
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">QASync</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html">Practice Questions</a></li>
+            <li><a href="scenarios.html">Scenarios</a></li>
+            <li><a href="cheat-sheet.html">Cheat Sheet</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="practice-header">
+    <div class="hero-badge">QA Interview Prep</div>
+    <h1 class="practice-title">Practice <em>Questions</em></h1>
+    <p class="practice-sub">
+        Sharpen your fundamentals with curated QA interview questions —
+        organized by difficulty so you can build confidence one level at a time.
+    </p>
+</header>
+
+<!-- STICKY ANCHOR NAV -->
+<div class="practice-anchors">
+    <div class="anchor-pill-wrap">
+        <a href="#basic" class="anchor-pill"><span class="dot dot-green"></span>Foundation</a>
+        <a href="#intermediate" class="anchor-pill"><span class="dot dot-yellow"></span>Application</a>
+        <a href="#scenario" class="anchor-pill"><span class="dot dot-red"></span>Interview-Ready</a>
+    </div>
+</div>
+
+<!-- MAIN -->
+<main class="practice-main">
+
+    <!-- ============ BASIC ============ -->
+    <section id="basic" class="level-card">
+        <div class="level-head">
+            <div class="level-icon level-icon-green">🟢</div>
+            <div>
+                <h2 class="level-title">Foundation</h2>
+                <p class="level-meta">Build your QA fundamentals step by step</p>
+            </div>
+        </div>
+
+        <div class="accordion practice-accordion" id="acc-basic">
+            <!-- Repeat 20 items. Replace question/answer text with your real content. -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#b1">
+                        <span class="q-num">01</span> What is Software Testing?
+                    </button>
+                </h2>
+                <div id="b1" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Software testing is the process of checking whether an application works as expected and meets user requirements without defects.
+                      <br> <b> 💡 Simple:</b>  Make sure your app behaves correctly before users touch it.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2">
+                        <span class="q-num">02</span> Why is Software Testing important?
+                    </button>
+                </h2>
+                <div id="b2" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">It helps identify defects early, ensures product quality, reduces future costs, and builds user trust.
+                       <br> <b> 💡 Simple:</b> Fixing bugs early = less chaos later.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b3">
+                        <span class="q-num">03</span> What is a Test Case?
+                    </button>
+                </h2>
+                <div id="b3" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">A test case is a set of steps, inputs, and expected results used to verify a specific feature of an application.
+                        <br><b> 💡 Simple:</b> A checklist to test one functionality.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b4">
+                        <span class="q-num">04</span> What is a Bug (Defect)?
+                    </button>
+                </h2>
+                <div id="b4" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">A bug is an error in the software where the actual result differs from the expected result.
+                        <br><b> 💡 Simple:</b> When your app does something weird it shouldn’t.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b5">
+                        <span class="q-num">05</span> What is the difference between Verification and Validation?
+                    </button>
+                </h2>
+                <div id="b5" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Verification ensures the product is built correctly according to specifications, while validation ensures the right product is built based on user needs.
+                        <br> <b> 💡 Simple:</b> <br>
+                            <p>Verification = Are we building it right? <br>Validation = Are we building the right thing? </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b6">
+                        <span class="q-num">06</span> What is Manual Testing?
+                    </button>
+                </h2>
+                <div id="b6" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Manual testing involves executing test cases without using automation tools to identify defects.
+                        <br><b> 💡 Simple:</b> A human testing the app step by step.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b7">
+                        <span class="q-num">07</span> What is Automation Testing?
+                    </button>
+                </h2>
+                <div id="b7" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Automation testing uses scripts and tools to execute test cases automatically, improving speed and accuracy.
+                        <br><b> 💡 Simple:</b> Letting tools do repetitive testing for you.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b8">
+                        <span class="q-num">08</span> What is Black Box Testing?
+                    </button>
+                </h2>
+                <div id="b8" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Black box testing focuses on testing the functionality of the application without knowing the internal code.
+                        <br><b> 💡 Simple:</b> You test like a user, not a developer.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b9">
+                        <span class="q-num">09</span> What is White Box Testing?
+                    </button>
+                </h2>
+                <div id="b9" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">White box testing involves testing internal code structure, logic, and paths of the application.
+                        <br><b> 💡 Simple:</b> You test the logic inside the code.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b10">
+                        <span class="q-num">10</span> What is Regression Testing?
+                    </button>
+                </h2>
+                <div id="b10" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Regression testing ensures that new code changes do not negatively affect existing features.
+                        <br><b> 💡 Simple:</b> New changes didn’t break old stuff.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b11">
+                        <span class="q-num">11</span> What is Smoke Testing?
+                    </button>
+                </h2>
+                <div id="b11" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Smoke testing is a quick check to verify that the core functionalities of an application are working.
+                        <br><b> 💡 Simple:</b> “Does the app even start properly?”
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b12">
+                        <span class="q-num">12</span> What is Sanity Testing?
+                    </button>
+                </h2>
+                <div id="b12" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Sanity testing is performed after minor changes to ensure that specific functionality works correctly.
+                        <br><b> 💡 Simple:</b> Quick check after a small fix.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b13">
+                        <span class="q-num">13</span> What is a Test Plan?
+                    </button>
+                </h2>
+                <div id="b13" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">A test plan is a document that defines the scope, strategy, resources, and schedule of testing activities.
+                        <br><b> 💡 Simple:</b> Blueprint of how testing will happen.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b14">
+                        <span class="q-num">14</span> What is a Test Scenario?
+                    </button>
+                </h2>
+                <div id="b14" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">A test scenario is a high-level description of what needs to be tested from a user’s perspective.
+                        <br><b> 💡 Simple:</b> What user action you want to test.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b15">
+                        <span class="q-num">15</span> Test Case vs Test Scenario?
+                    </button>
+                </h2>
+                <div id="b15" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">A test scenario is broad, while a test case is a detailed step-by-step implementation of that scenario.
+                        <br><b> 💡 Simple:</b> <br> Scenario = Idea <br> Test Case = Detailed steps
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b16">
+                        <span class="q-num">16</span> What is STLC?
+                    </button>
+                </h2>
+                <div id="b16" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">STLC (Software Testing Life Cycle) is the sequence of phases in testing: requirement analysis, planning, design, execution, and closure.
+                        <b> 💡 Simple:</b> The full journey of testing.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b17">
+                        <span class="q-num">17</span> What is SDLC?
+                    </button>
+                </h2>
+                <div id="b17" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">SDLC (Software Development Life Cycle) is the complete process of software development from planning to deployment and maintenance.
+                        <b> 💡 Simple:</b> How software is built from start to finish.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b18">
+                        <span class="q-num">18</span> What is Severity and Priority?
+                    </button>
+                </h2>
+                <div id="b18" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">Severity indicates how serious a defect is, while priority determines how urgently it should be fixed.
+                        <br><b> 💡 Simple:</b> Severity = Impact <br>Priority = Urgency
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b19">
+                        <span class="q-num">19</span> What is User Acceptance Testing (UAT)?
+                    </button>
+                </h2>
+                <div id="b19" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">UAT is the final phase where end users validate whether the system meets business requirements.
+                        <br><b> 💡 Simple:</b> Client says “yes, this is what I wanted.”
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b20">
+                        <span class="q-num">20</span> What is a Test Environment?
+                    </button>
+                </h2>
+                <div id="b20" class="accordion-collapse collapse" data-bs-parent="#acc-basic">
+                    <div class="accordion-body">A test environment is the setup (hardware, software, network) where testing is performed.
+                        <br><b> 💡 Simple:</b> The place where you test your app.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ INTERMEDIATE ============ -->
+    <section id="intermediate" class="level-card">
+        <div class="level-head">
+            <div class="level-icon level-icon-yellow">🟡</div>
+            <div>
+                <h2 class="level-title">Application</h2>
+                <p class="level-meta">Practical Thinking . Process, tools & techniques</p>
+            </div>
+        </div>
+
+        <div class="accordion practice-accordion" id="acc-inter">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#i1">
+                        <span class="q-num">01</span> You are testing a login page. What test cases would you write?
+                    </button>
+                </h2>
+                <div id="i1" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">I would test valid and invalid credentials, empty fields, password masking, “forgot password” flow, session handling, and error messages.
+                        <br><b> 💡 Simple:</b> Don’t just test “login works”—test all the ways it can fail.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i2">
+                        <span class="q-num">02</span> You find a bug just before release. What will you do?
+                    </button>
+                </h2>
+                <div id="i2" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">I would report it immediately with proper details and discuss with the team whether to fix it or release with a known issue based on severity and impact.
+                        <br><b> 💡 Simple:</b> Not all bugs are equal—decision depends on impact.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i3">
+                        <span class="q-num">03</span> How would you test a “Forgot Password” feature
+                    </button>
+                </h2>
+                <div id="i3" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Test email/OTP generation, expiry, invalid inputs, multiple requests, security aspects, and successful password reset.
+                        <br><b> 💡 Simple:</b> Think flow + security.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i4">
+                        <span class="q-num">04</span> How do you decide which test cases to prioritize?
+                    </button>
+                </h2>
+                <div id="i4" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Based on business impact, critical functionality, frequently used features, and risk areas.
+                        <br><b> 💡 Simple:</b> Test what can break the app first.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i5">
+                        <span class="q-num">05</span> If a developer says “It works on my machine,” what will you do? 
+                    </button>
+                </h2>
+                <div id="i5" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">I would check environment differences, share logs/screenshots, and try to reproduce the issue with exact steps.
+                        <br><b> 💡 Simple:</b> Same code ≠ same environment.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i6">
+                        <span class="q-num">06</span> How would you test a search feature?
+                    </button>
+                </h2>
+                <div id="i6" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Test valid/invalid inputs, partial matches, case sensitivity, special characters, empty search, performance, and result accuracy.
+                        <br><b> 💡 Simple:</b> Users search in weird ways—cover that.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i7">
+                        <span class="q-num">07</span> What will you do if requirements are unclear?
+                    </button>
+                </h2>
+                <div id="i7" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">I would clarify with stakeholders, ask questions, review documents, and avoid assumptions before testing.
+                        <br><b> 💡 Simple:</b> Never guess requirements.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i8">
+                        <span class="q-num">08</span> How would you test an e-commerce checkout process?
+                    </button>
+                </h2>
+                <div id="i8" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Test cart, pricing, discounts, payment methods, order confirmation, failure handling, and edge cases.
+                        <br><b> 💡 Simple:</b> Money flow = high priority testing.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i9">
+                        <span class="q-num">09</span> How do you ensure good test coverage?
+                    </button>
+                </h2>
+                <div id="i9" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">By covering all functional flows, edge cases, boundary conditions, and different user scenarios.
+                        <br><b> 💡 Simple:</b> Don’t leave blind spots.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i10">
+                        <span class="q-num">10</span> If you don’t have enough time to test everything, what will you do?
+                    </button>
+                </h2>
+                <div id="i10" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Focus on critical features, high-risk areas, and core functionalities first.
+                        <br><b> 💡 Simple:</b> Prioritize smartly, not perfectly.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i11">
+                        <span class="q-num">11</span> How would you test a file upload feature?
+                    </button>
+                </h2>
+                <div id="i11" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Test different file types, sizes, invalid formats, upload limits, security checks, and success/failure cases.
+                        <br><b> 💡 Simple:</b> People WILL upload weird files.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i12">
+                        <span class="q-num">12</span> What will you do if you cannot reproduce a bug?
+                    </button>
+                </h2>
+                <div id="i12" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Ask for more details, check logs, environment, data, and try different scenarios.
+                        <br><b> 💡 Simple:</b> No reproduction = no fix.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i13">
+                        <span class="q-num">13</span> How would you test a mobile app differently from a web app?
+                    </button>
+                </h2>
+                <div id="i13" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Focus on device compatibility, screen sizes, gestures, performance, battery usage, and network conditions.
+                        <br><b> 💡 Simple:</b> Mobile = more real-world variables.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i14">
+                        <span class="q-num">14</span> 14. How would you test error messages?
+                    </button>
+                </h2>
+                <div id="i14" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Check clarity, correctness, user-friendliness, and whether they guide the user properly.
+                        <br><b> 💡 Simple:</b> Errors should help, not confuse.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i15">
+                        <span class="q-num">15</span> What will you do if a bug is rejected by the developer?
+                    </button>
+                </h2>
+                <div id="i15" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Re-check the issue, provide evidence, and discuss respectfully to reach a conclusion.
+                        <br><b> 💡 Simple:</b> Fight with logic, not ego.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i16">
+                        <span class="q-num">16</span> How would you test performance of an application (basic level)?
+                    </button>
+                </h2>
+                <div id="i16" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Check response time, load handling, and system behavior under multiple users.
+                        <br><b> 💡 Simple:</b> Does it slow down when many people use it?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i17">
+                        <span class="q-num">17</span> How would you test a form with multiple fields?
+                    </button>
+                </h2>
+                <div id="i17" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Test valid/invalid inputs, mandatory fields, field validations, error messages, and submission flow.
+                        <br><b> 💡 Simple:</b> Forms are bug magnets.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i18">
+                        <span class="q-num">18</span> What is your approach to testing a new feature?
+                    </button>
+                </h2>
+                <div id="i18" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Understand requirements, create test cases, execute tests, report bugs, and retest fixes.
+                        <br><b> 💡 Simple:</b> Understand → Test → Fix → Repeat.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i19">
+                        <span class="q-num">19</span> How would you test session timeout?
+                    </button>
+                </h2>
+                <div id="i19" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">Check inactivity logout, session expiry, security, and user redirection after timeout.
+                        <br><b> 💡 Simple:</b> Idle users shouldn’t stay logged in forever.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i20">
+                        <span class="q-num">20</span> What mindset should a tester have?
+                    </button>
+                </h2>
+                <div id="i20" class="accordion-collapse collapse" data-bs-parent="#acc-inter">
+                    <div class="accordion-body">A tester should be curious, detail-oriented, critical thinker, and always question “what can go wrong?”
+                        <br><b> 💡 Simple:</b> Think like a user + break like a hacker.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SCENARIO ============ -->
+    <section id="scenario" class="level-card">
+        <div class="level-head">
+            <div class="level-icon level-icon-red">🔴</div>
+            <div>
+                <h2 class="level-title">Interview Ready</h2>
+                <p class="level-meta">Interview Challenges · Real-world problem solving</p>
+            </div>
+        </div>
+
+        <div class="accordion practice-accordion" id="acc-scen">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#s1">
+                        <span class="q-num">01</span> You tested everything, but production still has bugs. Why?
+                    </button>
+                </h2>
+                <div id="s1" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Because testing cannot cover 100% scenarios. Real users, environments, and unexpected inputs can expose issues missed during testing.
+                       <br> 💡 Simple: Users are more creative at breaking things than testers 😅
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s2">
+                        <span class="q-num">02</span> How do you test something when there are no requirements?
+                    </button>
+                </h2>
+                <div id="s2" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Use exploratory testing, past experience, similar applications, and ask stakeholders for clarification.
+                        <br>💡 Simple: When docs fail, your brain takes over.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s3">
+                        <span class="q-num">03</span> How would you test a feature with infinite possible inputs (e.g., text field)?
+                    </button>
+                </h2>
+                <div id="s3" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Use techniques like equivalence partitioning, boundary value analysis, and focus on edge cases instead of testing everything.
+                        <br>💡 Simple: Test smart, not everything.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s4">
+                        <span class="q-num">04</span>  A feature works perfectly but is slow. Is it a bug?
+                    </button>
+                </h2>
+                <div id="s4" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Yes, if it affects user experience or performance expectations. It becomes a performance defect.
+                        <br>💡 Simple: Slow = broken in real life.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s5">
+                        <span class="q-num">05</span> Developer says a bug is “not reproducible.” What will you do?
+                    </button>
+                </h2>
+                <div id="s5" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Provide detailed steps, logs, screenshots, environment details, and try reproducing in different conditions.
+                        <br>💡 Simple: Make the bug impossible to ignore.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s6">
+                        <span class="q-num">06</span> How do you test security at a basic level as a QA?
+                    </button>
+                </h2>
+                <div id="s6" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Test authentication, authorization, input validation, session handling, and common vulnerabilities.
+                        <br>💡 Simple: Try breaking access rules.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s7">
+                        <span class="q-num">07</span> What if fixing one bug creates another bug?
+                    </button>
+                </h2>
+                <div id="s7" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">This is why regression testing is important—to ensure fixes don’t introduce new issues.
+                        <br>💡 Simple: Fix one, check ten.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s8">
+                        <span class="q-num">08</span> You have 100 test cases but time for only 20. What do you test?
+                    </button>
+                </h2>
+                <div id="s8" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Focus on high-risk, high-impact, and core functionalities first.
+                        <br>💡 Simple: Protect what matters most.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s9">
+                        <span class="q-num">09</span> How do you test a feature you don’t understand?
+                    </button>
+                </h2>
+                <div id="s9" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Break it into smaller parts, explore it, ask questions, and learn while testing.
+                        <br>💡 Simple: Confusion is step one of understanding.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s10">
+                        <span class="q-num">10</span> What is exploratory testing and when would you use it?
+                    </button>
+                </h2>
+                <div id="s10" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">It is unscripted testing where testers explore the application based on intuition and experience. Used when requirements are unclear or time is limited.
+                        💡 Simple: Testing without a script—but not without thinking.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s11">
+                        <span class="q-num">11</span> How do you ensure your test cases are effective?
+                    </button>
+                </h2>
+                <div id="s11" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">By making them clear, covering edge cases, avoiding redundancy, and aligning with requirements.
+                        <br>💡 Simple: Quality > quantity.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s12">
+                        <span class="q-num">12</span> What if two testers report the same bug?
+                    </button>
+                </h2>
+                <div id="s12" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">It should be marked as duplicate and linked to the original issue.
+                        <br>💡 Simple: One bug, many discoverers 😄
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s13">
+                        <span class="q-num">13</span> How would you test a system that depends on third-party APIs?
+                    </button>
+                </h2>
+                <div id="s13" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Test with mock data, handle failures, timeouts, and validate responses under different conditions.
+                        <br>💡 Simple: Assume external systems WILL fail.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s14">
+                        <span class="q-num">14</span> What is risk-based testing?
+                    </button>
+                </h2>
+                <div id="s14" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Prioritizing testing based on areas with the highest risk and impact.
+                        <br>💡 Simple: Test where failure hurts most.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s15">
+                        <span class="q-num">15</span> You found a critical bug but the team decides to release anyway. What will you do?
+                    </button>
+                </h2>
+                <div id="s15" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Document the risk, communicate clearly, and ensure stakeholders are aware of the impact.
+                        <br>💡 Simple: Raise it, record it, move on professionally.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s16">
+                        <span class="q-num">16</span> How do you test usability?
+                    </button>
+                </h2>
+                <div id="s16" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Check ease of use, navigation, clarity, and user experience from an end-user perspective.
+                        <br>💡 Simple: If users struggle, it’s a problem.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s17">
+                        <span class="q-num">17</span> What is the difference between retesting and regression testing?
+                    </button>
+                </h2>
+                <div id="s17" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Retesting verifies a specific bug fix, while regression testing checks overall system stability after changes.
+                        <br>💡 Simple:
+                        <br>Retest = one bug
+                        <br>Regression = whole system
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s18">
+                        <span class="q-num">18</span> How do you test edge cases?
+                    </button>
+                </h2>
+                <div id="s18" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">By identifying boundary conditions, unusual inputs, and unexpected user behavior.
+                        <br>💡 Simple: Think: “What’s the weirdest thing a user can do?”
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s19">
+                        <span class="q-num">19</span> What if requirements keep changing during testing?
+                    </button>
+                </h2>
+                <div id="s19" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Adapt quickly, update test cases, and maintain clear communication with the team.
+                        <br>💡 Simple: Flexibility is survival.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s20">
+                        <span class="q-num">20</span> What makes a good QA tester stand out?
+                    </button>
+                </h2>
+                <div id="s20" class="accordion-collapse collapse" data-bs-parent="#acc-scen">
+                    <div class="accordion-body">Strong analytical thinking, attention to detail, communication skills, and the ability to think like both a user and a developer.
+                        <br>💡 Simple: Break things smartly, not randomly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="practice-foot">
+    <p>Built with ❤️ for QA learners · <a href="index.html">QASync</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -3,11 +3,13 @@
 QASync is a front-end QA Interview Preparation Platform that combines concept learning, scenario-based problem solving, and quick revision resources in a single place.
 
 While preparing QA concepts, I noticed that most resources were either long theory notes, random interview questions, or scattered across multiple websites. I wanted a place where someone could learn concepts, apply them through scenarios, and quickly revise before an interview — all in one place.
+---
 
 ## 🌐 Live Demo
 
 Coming Soon...
 
+---
 ##  What's Inside?
 
 ###  Practice Questions

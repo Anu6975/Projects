@@ -1,4 +1,4 @@
-# DemoBlaze E-Commerce Website - BDD Automation Testing
+# DemoBlaze E-Commerce Website - End-to-End Automation Framework
 
 ## 📌 Project Overview
 
@@ -64,3 +64,40 @@ src/test/java
 │
 └── utilities
     └── AlertUtils.java
+
+```
+
+### Framework Components
+
+- **Base** - Contains the base test class and common test setup.
+- **Pages** - Contains page-specific locators and reusable methods following the Page Object Model.
+- **FeatureFiles** - Contains BDD scenarios written using Gherkin syntax.
+- **Step Definitions** - Connects Cucumber feature steps with the corresponding automation code.
+- **Runner** - Contains the Cucumber TestNG runner used to execute the scenarios.
+- **Utilities** - Contains reusable utility methods used in the framework.
+
+---
+
+## ▶️ How to Run
+
+### Prerequisites
+
+- Java JDK
+- Maven
+- IntelliJ IDEA or another Java IDE
+- Git
+- Supported web browser
+
+### Steps
+
+1. Clone the repository.
+2. Open the project in IntelliJ IDEA.
+3. Allow Maven to download the required dependencies.
+4. Verify the browser and WebDriver configuration.
+5. Run the Cucumber TestNG runner.
+
+If Maven test execution is configured in the project, the tests can also be executed using:
+
+```bash
+mvn test
+```
